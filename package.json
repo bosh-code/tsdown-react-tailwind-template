@@ -16,6 +16,10 @@
   "files": [
     "dist"
   ],
+  "packageManager": "pnpm@10.18.1",
+  "engines": {
+    "node": ">=24"
+  },
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
