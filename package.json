@@ -40,6 +40,9 @@
     "release": "bumpp && pnpm publish",
     "prepublishOnly": "pnpm run build"
   },
+  "peerDependencies": {
+    "react": "^19.1.0"
+  },
   "devDependencies": {
     "@eslint/js": "^9.37.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -53,7 +56,6 @@
     "eslint-plugin-react": "^7.37.5",
     "globals": "^16.4.0",
     "happy-dom": "^17.4.6",
-    "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "tsdown": "^0.11.1",
     "typescript": "^5.8.3",
