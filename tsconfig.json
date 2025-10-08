@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "jsx": "react",
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
     "lib": ["es2023"],
     "moduleDetection": "force",
     "module": "preserve",
