@@ -1,6 +1,5 @@
-import { render, screen } from '@testing-library/react'
-import { expect, test } from 'vitest'
-import { MyButton } from '../src'
+import { render, screen } from '@testing-library/preact';
+import { MyButton } from '../src';
 
 test('button', () => {
   render(<MyButton type="primary" />)
