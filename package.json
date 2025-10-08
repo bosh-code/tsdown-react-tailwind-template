@@ -32,6 +32,7 @@
   },
   "scripts": {
     "build": "tsdown",
+    "build:prod": "NODE_ENV=prod tsdown",
     "dev": "tsdown --watch",
     "lint": "eslint .",
     "playground": "vite --config playground/vite.config.ts",
