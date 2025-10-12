@@ -1,4 +1,5 @@
 import { defineConfig } from 'tsdown';
+import { injectCssPlugin } from '@bosh-code/tsdown-plugin-inject-css';
 
 export default defineConfig([
   {
@@ -7,6 +8,9 @@ export default defineConfig([
     platform: 'browser',
     dts: true,
     minify: process.env.NODE_ENV === 'prod',
-    sourcemap: true
+    sourcemap: true,
+    plugins: [
+      injectCssPlugin()
+    ]
   }
 ]);
