@@ -36,7 +36,8 @@
     "dev": "tsdown --watch",
     "lint": "eslint .",
     "playground": "vite --config playground/vite.config.ts",
-    "test": "vitest",
+    "test": "vitest --watch false",
+    "test:watch": "vitest",
     "typecheck": "tsc --noEmit",
     "release": "bumpp && pnpm publish",
     "prepublishOnly": "pnpm run build"
