@@ -48,6 +48,7 @@
     "@bosh-code/tsdown-plugin-inject-css": "^1.0.2",
     "@bosh-code/tsdown-plugin-tailwindcss": "^1.0.1",
     "@eslint/js": "^9.37.0",
+    "@tailwindcss/vite": "^4.1.14",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@types/node": "^22.15.17",
