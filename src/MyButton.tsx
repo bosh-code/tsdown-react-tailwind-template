@@ -1,6 +1,6 @@
 import React from 'react'
 
-interface MyButtonProps {
+export interface MyButtonProps {
   type?: 'primary'
 }
 
