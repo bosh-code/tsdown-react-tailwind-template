@@ -1,4 +1,4 @@
-# react-components-starter
+# tsdown-react-tailwind-template
 
 A starter for creating a React component library.
 
