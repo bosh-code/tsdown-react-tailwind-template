@@ -1,9 +1,31 @@
 import { type FunctionComponent } from 'preact'
 
+type ButtonType = 'primary' | 'secondary' | 'outline' | 'error' | 'ghost';
+type ButtonSize = 'small' | 'medium' | 'large';
+
 export interface MyButtonProps {
-  type?: 'primary'
+  type?: ButtonType;
+
+  size?: ButtonSize;
 }
 
-export const MyButton: FunctionComponent<MyButtonProps> = ({ type }) => {
-  return <button class="text-red-500">my button: type {type}</button>
-}
+const buttonTypes = {
+  primary: 'btn-primary',
+  secondary: 'btn-secondary',
+  outline: 'btn-outline',
+  error: 'btn-error',
+  ghost: 'btn-ghost'
+} as const;
+
+const buttonSizes = {
+  small: 'btn-sm',
+  medium: 'btn-md',
+  large: 'btn-lg'
+} as const;
+
+export const MyButton: FunctionComponent<MyButtonProps>= ({ type, size }) => {
+  const buttonType = type && buttonTypes[type] ? buttonTypes[type] : '';
+  const buttonSize = size && buttonSizes[size] ? buttonSizes[size] : '';
+
+  return <button class={`btn ${buttonType} ${buttonSize}`.trim()}>my button: type {type}</button>;
+};
