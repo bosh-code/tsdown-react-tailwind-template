@@ -1,21 +1,47 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
-    "target": "esnext",
-    "jsx": "react",
-    "lib": ["es2023"],
-    "moduleDetection": "force",
-    "module": "preserve",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "types": ["node"],
-    "strict": true,
-    "noUnusedLocals": true,
+    "composite": true,
+    "allowImportingTsExtensions": false,
     "declaration": true,
+    "declarationMap": true,
+    "isolatedDeclarations": false,
     "emitDeclarationOnly": true,
     "esModuleInterop": true,
     "isolatedModules": true,
-    "verbatimModuleSyntax": true,
-    "skipLibCheck": true
+    "jsx": "react-jsx",
+    "target": "ESNext",
+    "module": "preserve",
+    "moduleDetection": "force",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "erasableSyntaxOnly": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+    "useDefineForClassFields": true,
+    "verbatimModuleSyntax": true
   },
-  "include": ["src"]
+  "files": [],
+  "references": [
+    {
+      "path": "./playground/tsconfig.app.json"
+    },
+    {
+      "path": "./playground/tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.lib.json"
+    },
+    {
+      "path": "./tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.test.json"
+    }
+  ],
+
 }
