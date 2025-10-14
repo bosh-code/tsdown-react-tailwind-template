@@ -1,8 +1,8 @@
-import react from '@vitejs/plugin-react'
+import preactPlugin from '@preact/preset-vite';
 import { defineConfig } from 'vitest/config'
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [preactPlugin()],
   test: {
     environment: 'happy-dom',
     globals: true,

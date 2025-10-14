@@ -5,12 +5,10 @@ import { tailwindPlugin } from '@bosh-code/tsdown-plugin-tailwindcss';
 export default defineConfig([
   {
     entry: ['./src/index.ts'],
-    external: ['react', 'react/jsx-runtime'],
+    external: ['preact', 'preact/jsx-runtime', 'preact/jsx-runtime/*', 'preact-compat'],
     platform: 'browser',
     target: 'esnext',
-    dts: {
-      build: true
-    },
+    dts: true,
     minify: process.env.NODE_ENV === 'prod',
     sourcemap: true,
     plugins: [
@@ -19,6 +17,7 @@ export default defineConfig([
           minify: process.env.NODE_ENV === 'prod'
         }
       )
-    ]
+    ],
+    tsconfig: './tsconfig.lib.json',
   }
 ]);
