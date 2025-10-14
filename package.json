@@ -44,7 +44,12 @@
     "prepublishOnly": "pnpm run build"
   },
   "peerDependencies": {
-    "react": "^19.1.0"
+    "@radix-ui/react-slot": "^1.2.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.545.0",
+    "react": "^19.1.0",
+    "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
     "@bosh-code/tsdown-plugin-inject-css": "^1.0.2",
@@ -71,12 +76,5 @@
     "vite": "npm:rolldown-vite@latest",
     "vite-plugin-tsconfig-paths": "^1.4.1",
     "vitest": "^3.2.4"
-  },
-  "dependencies": {
-    "@radix-ui/react-slot": "^1.2.3",
-    "class-variance-authority": "^0.7.1",
-    "clsx": "^2.1.1",
-    "lucide-react": "^0.545.0",
-    "tailwind-merge": "^3.3.1"
   }
 }

@@ -5,7 +5,14 @@ import { tailwindPlugin } from '@bosh-code/tsdown-plugin-tailwindcss';
 export default defineConfig([
   {
     entry: ['./src/index.ts'],
-    external: ['react', 'react/jsx-runtime'],
+    external: [
+      'react',
+      'react/jsx-runtime',
+      '@radix-ui/react-slot',
+      'class-variance-authority',
+      'clsx',
+      'tailwind-merge'
+    ],
     platform: 'browser',
     target: 'esnext',
     dts: true,
