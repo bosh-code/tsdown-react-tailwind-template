@@ -27,5 +27,5 @@ export const MyButton: React.FC<MyButtonProps> = ({ type, size }) => {
   const buttonType = type && buttonTypes[type] ? buttonTypes[type] : '';
   const buttonSize = size && buttonSizes[size] ? buttonSizes[size] : '';
 
-  return <button className={`btn ${buttonType} ${buttonSize}`}>my button: type {type}</button>;
+  return <button className={`btn ${buttonType} ${buttonSize}`.trim()}>my button: type {type}</button>;
 };
