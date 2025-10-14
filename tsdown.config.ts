@@ -8,9 +8,7 @@ export default defineConfig([
     external: ['react', 'react/jsx-runtime'],
     platform: 'browser',
     target: 'esnext',
-    dts: {
-      build: true
-    },
+    dts: true,
     minify: process.env.NODE_ENV === 'prod',
     sourcemap: true,
     plugins: [
@@ -19,6 +17,7 @@ export default defineConfig([
           minify: process.env.NODE_ENV === 'prod'
         }
       )
-    ]
+    ],
+    tsconfig: './tsconfig.lib.json',
   }
 ]);
