@@ -6,7 +6,13 @@
       "ESNext",
       "DOM",
       "DOM.Iterable"
-    ]
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
   },
   "include": [
     "src"
