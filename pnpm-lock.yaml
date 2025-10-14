@@ -39,6 +39,9 @@ importers:
       bumpp:
         specifier: ^10.3.1
         version: 10.3.1
+      daisyui:
+        specifier: ^5.3.0
+        version: 5.3.0
       eslint:
         specifier: ^9.37.0
         version: 9.37.0(jiti@2.6.1)
@@ -1309,6 +1312,9 @@ packages:
   cssstyle@5.3.1:
     resolution: {integrity: sha512-g5PC9Aiph9eiczFpcgUhd9S4UUO3F+LHGRIi5NUMZ+4xtoIYbHNZwZnWA2JsFGe8OU8nl4WyaEFiZuGuxlutJQ==}
     engines: {node: '>=20'}
+
+  daisyui@5.3.0:
+    resolution: {integrity: sha512-MgkNzabeGQ/rMbXujoUkjVzBiFL8gQRELKOfDY7efeLxHAQ8wf9VsRgcjDPDMsmI5rOV5iQ2DFMDo92RsRAcBg==}
 
   data-urls@6.0.0:
     resolution: {integrity: sha512-BnBS08aLUM+DKamupXs3w2tJJoqU+AkaE/+6vQxi/G/DPmIZFJJp9Dkb1kM03AZx8ADehDUZgsNxju3mPXZYIA==}
@@ -4016,6 +4022,8 @@ snapshots:
     transitivePeerDependencies:
       - postcss
     optional: true
+
+  daisyui@5.3.0: {}
 
   data-urls@6.0.0:
     dependencies:
