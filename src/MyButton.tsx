@@ -1,9 +1,31 @@
-import React from 'react'
+import React from 'react';
+
+type ButtonType = 'primary' | 'secondary' | 'outline' | 'error' | 'ghost';
+type ButtonSize = 'small' | 'medium' | 'large';
 
 export interface MyButtonProps {
-  type?: 'primary'
+  type?: ButtonType;
+
+  size?: ButtonSize;
 }
 
-export const MyButton: React.FC<MyButtonProps> = ({ type }) => {
-  return <button className="text-red-500">my button: type {type}</button>
-}
+const buttonTypes = {
+  primary: 'btn-primary',
+  secondary: 'btn-secondary',
+  outline: 'btn-outline',
+  error: 'btn-error',
+  ghost: 'btn-ghost'
+} as const;
+
+const buttonSizes = {
+  small: 'btn-sm',
+  medium: 'btn-md',
+  large: 'btn-lg'
+} as const;
+
+export const MyButton: React.FC<MyButtonProps> = ({ type, size }) => {
+  const buttonType = type && buttonTypes[type] ? buttonTypes[type] : '';
+  const buttonSize = size && buttonSizes[size] ? buttonSizes[size] : '';
+
+  return <button className={`btn ${buttonType} ${buttonSize}`}>my button: type {type}</button>;
+};
