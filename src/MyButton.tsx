@@ -1,9 +1,15 @@
 import { type FunctionComponent } from 'preact'
+import { Button } from '@/components/ui/button'
 
 export interface MyButtonProps {
-  type?: 'primary'
+  type?: 'primary' | 'secondary'
 }
 
-export const MyButton: FunctionComponent<MyButtonProps> = ({ type }) => {
-  return <button class="text-red-500">my button: type {type}</button>
+const variantMapping = {
+  primary: 'default',
+  secondary: 'secondary'
+} as const
+
+export const MyButton: FunctionComponent<MyButtonProps> = ({ type = 'primary' }) => {
+  return <Button variant={variantMapping[type]}>my button: type {type}</Button>
 }
