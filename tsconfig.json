@@ -27,6 +27,9 @@
     "verbatimModuleSyntax": true,
     "rootDir": ".",
     "paths": {
+      "@/*": [
+        "./src/*"
+      ],
       "react": [
         "./node_modules/preact/compat/"
       ],
@@ -58,6 +61,5 @@
     {
       "path": "./tsconfig.test.json"
     }
-  ],
-
+  ]
 }
