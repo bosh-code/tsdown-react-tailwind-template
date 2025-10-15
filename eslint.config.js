@@ -6,6 +6,8 @@ import tseslint from 'typescript-eslint';
 
 export default defineConfig([
   globalIgnores(['dist']),
+  globalIgnores(['src/components/ui']),
+
   {
     files: ['**/*.js'],
     extends: [
