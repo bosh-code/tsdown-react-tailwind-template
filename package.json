@@ -44,6 +44,7 @@
     "prepublishOnly": "pnpm run build"
   },
   "peerDependencies": {
+    "@bosh-code/preact-slot": "^1.1.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.545.0",
@@ -72,8 +73,5 @@
     "vite": "npm:rolldown-vite@latest",
     "vite-plugin-tsconfig-paths": "^1.4.1",
     "vitest": "^3.2.4"
-  },
-  "dependencies": {
-    "@radix-ui/react-slot": "^1.2.3"
   }
 }

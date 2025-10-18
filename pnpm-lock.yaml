@@ -8,9 +8,9 @@ importers:
 
   .:
     dependencies:
-      '@radix-ui/react-slot':
-        specifier: ^1.2.3
-        version: 1.2.3(react@19.2.0)
+      '@bosh-code/preact-slot':
+        specifier: ^1.1.1
+        version: 1.1.1(preact@10.27.2)
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
@@ -259,6 +259,12 @@ packages:
   '@babel/types@7.28.4':
     resolution: {integrity: sha512-bkFqkLhh3pMBUQQkpVgWDWq/lqzc2678eUyDlTBhRqhCHFguYYGM0Efga7tYk4TogG/3x0EEl66/OQ+WGbWB/Q==}
     engines: {node: '>=6.9.0'}
+
+  '@bosh-code/preact-slot@1.1.1':
+    resolution: {integrity: sha512-MJe3WI+hCgUZniE3vvYNIQyXlp8uW3KsThdydxH5TZMwwM+Z3AQU+kwer7Gw+hSz9dTMrtkuE2svWBsGwesXqg==}
+    engines: {node: '>=24'}
+    peerDependencies:
+      preact: ^10.27.2
 
   '@bosh-code/tsdown-plugin-inject-css@1.0.2':
     resolution: {integrity: sha512-w8BnQeNNrugILQsflJYJy/Ek9dR1oDSugpMwNQ6KTjzOsFfefErZuHZ1sP5KgHSLamKvXDMmNL+VM4LzjipDKw==}
@@ -595,24 +601,6 @@ packages:
 
   '@quansync/fs@0.1.5':
     resolution: {integrity: sha512-lNS9hL2aS2NZgNW7BBj+6EBl4rOf8l+tQ0eRY6JWCI8jI2kc53gSoqbjojU0OnAWhzoXiOjFyGsHcDGePB3lhA==}
-
-  '@radix-ui/react-compose-refs@1.1.2':
-    resolution: {integrity: sha512-z4eqJvfiNnFMHIIvXP3CY57y2WJs5g2v3X0zm9mEJkrkNv4rDxu+sg9Jh8EkXyeqBkB7SOcboo9dMVqhyrACIg==}
-    peerDependencies:
-      '@types/react': '*'
-      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-
-  '@radix-ui/react-slot@1.2.3':
-    resolution: {integrity: sha512-aeNmHnBxbi2St0au6VBVC7JXFlhLlOnvIIlePNniyUNAClzmtAUEY8/pBiK3iHjufOlwA+c20/8jngo7xcrg8A==}
-    peerDependencies:
-      '@types/react': '*'
-      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
 
   '@rolldown/binding-android-arm64@1.0.0-beta.42':
     resolution: {integrity: sha512-W5ZKF3TP3bOWuBfotAGp+UGjxOkGV7jRmIRbBA7NFjggx7Oi6vOmGDqpHEIX7kDCiry1cnIsWQaxNvWbMdkvzQ==}
@@ -3099,6 +3087,10 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
 
+  '@bosh-code/preact-slot@1.1.1(preact@10.27.2)':
+    dependencies:
+      preact: 10.27.2
+
   '@bosh-code/tsdown-plugin-inject-css@1.0.2(tsdown@0.15.6(typescript@5.9.3))':
     dependencies:
       '@ast-grep/napi': 0.39.6
@@ -3383,15 +3375,6 @@ snapshots:
   '@quansync/fs@0.1.5':
     dependencies:
       quansync: 0.2.11
-
-  '@radix-ui/react-compose-refs@1.1.2(react@19.2.0)':
-    dependencies:
-      react: 19.2.0
-
-  '@radix-ui/react-slot@1.2.3(react@19.2.0)':
-    dependencies:
-      '@radix-ui/react-compose-refs': 1.1.2(react@19.2.0)
-      react: 19.2.0
 
   '@rolldown/binding-android-arm64@1.0.0-beta.42':
     optional: true

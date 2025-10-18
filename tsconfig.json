@@ -30,6 +30,9 @@
       "@/*": [
         "./src/*"
       ],
+      "@radix-ui/react-slot": [
+        "./node_modules/@bosh-code/preact-slot"
+      ],
       "react": [
         "./node_modules/preact/compat/"
       ],
